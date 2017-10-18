@@ -1,0 +1,16 @@
+{
+  "name": "Improved new tab page",
+  "description": "Display bookmarks on the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+	
+	"browser_action" :{
+		"default_icon": "opened-email-envelope.png",
+		"default_popup": "start-page.html",
+		"default_title": "New Tab Extension"
+	},	
+	
+   "chrome_url_overrides": {"newtab": "start-page.html"},
+  "permissions": ["http://www.*.*","bookmarks", "history", "storage"],
+  "manifest_version": 2
+}
